@@ -1,4 +1,4 @@
-import threads.CounterThread;
+import HackerRank.GridSearch;
 
 public class Main {
     public static void main(String[] args){
@@ -9,7 +9,7 @@ public class Main {
             newArray[i] = scanner.nextInt();
         }
         System.out.println(Arrays.toString(BubbleSorter.sort(newArray)));
-        System.out.println(Arrays.toString(BubbleSorter.optimizedSort(newArray)));*/
+        System.out.println(Arrays.toString(BubbleSorter.optimizedSort(newArray)));
         CounterThread counter = new CounterThread();
         counter.start();
         Thread charCounter = new Thread(new Runnable() {
@@ -25,6 +25,7 @@ public class Main {
                 }
             }
         });
-        charCounter.start();
+        charCounter.start();*/
+        GridSearch.solve();
     }
 }
